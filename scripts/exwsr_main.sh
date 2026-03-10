@@ -956,7 +956,6 @@ do
                                                 flights_240_[$mk20]=${flight}
                                                 mk20=`expr ${mk20} + 1`
                                         fi;;
-
 			esac
 		done
 
