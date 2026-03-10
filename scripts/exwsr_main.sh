@@ -412,6 +412,16 @@ mk7=1
 mk8=1
 mk9=1
 mk10=1
+mk11=1
+mk12=1
+mk13=1
+mk14=1
+mk15=1
+mk16=1
+mk17=1
+mk18=1
+mk19=1
+mk20=1
 flights_24_[0]=0
 flights_36_[0]=0
 flights_48_[0]=0
@@ -421,6 +431,16 @@ flights_84_[0]=0
 flights_96_[0]=0
 flights_108_[0]=0
 flights_120_[0]=0
+flights_132_[0]=0
+flights_144_[0]=0
+flights_156_[0]=0
+flights_168_[0]=0
+flights_180_[0]=0
+flights_192_[0]=0
+flights_204_[0]=0
+flights_216_[0]=0
+flights_228_[0]=0
+flights_240_[0]=0
 case $ivnorm in
 	1) vnormgr='u,v'
 		flnmcode='WND';;
@@ -786,6 +806,157 @@ do
 						flights_120_[$mk10]=${flight}
 						mk10=`expr ${mk10} + 1`
 					fi;;
+                                11) ct=`expr ${mk11} - 1`
+                                        flag=1
+                                        while test ${ct} -ne -1
+                                        do
+                                                if [ ${flight} -eq flights_132_[$ct] ]
+                                                then
+                                                        flag=10
+                                                fi
+                                                ct=`expr ${ct} - 1`
+                                        done
+                                        if [ ${flag} -eq 1 ]
+                                        then
+                                                flights_132_[$mk11]=${flight}
+                                                mk11=`expr ${mk11} + 1`
+                                        fi;;
+                                12) ct=`expr ${mk12} - 1`
+                                        flag=1
+                                        while test ${ct} -ne -1
+                                        do
+                                                if [ ${flight} -eq flights_144_[$ct] ]
+                                                then
+                                                        flag=10
+                                                fi
+                                                ct=`expr ${ct} - 1`
+                                        done
+                                        if [ ${flag} -eq 1 ]
+                                        then
+                                                flights_144_[$mk12]=${flight}
+                                                mk12=`expr ${mk12} + 1`
+                                        fi;;
+                                13) ct=`expr ${mk13} - 1`
+                                        flag=1
+                                        while test ${ct} -ne -1
+                                        do
+                                                if [ ${flight} -eq flights_156_[$ct] ]
+                                                then
+                                                        flag=10
+                                                fi
+                                                ct=`expr ${ct} - 1`
+                                        done
+                                        if [ ${flag} -eq 1 ]
+                                        then
+                                                flights_156_[$mk13]=${flight}
+                                                mk13=`expr ${mk13} + 1`
+                                        fi;;
+                                14) ct=`expr ${mk14} - 1`
+                                        flag=1
+                                        while test ${ct} -ne -1
+                                        do
+                                                if [ ${flight} -eq flights_168_[$ct] ]
+                                                then
+                                                        flag=10
+                                                fi
+                                                ct=`expr ${ct} - 1`
+                                        done
+                                        if [ ${flag} -eq 1 ]
+                                        then
+                                                flights_168_[$mk14]=${flight}
+                                                mk14=`expr ${mk14} + 1`
+                                        fi;;
+                                15) ct=`expr ${mk15} - 1`
+                                        flag=1
+                                        while test ${ct} -ne -1
+                                        do
+                                                if [ ${flight} -eq flights_180_[$ct] ]
+                                                then
+                                                        flag=10
+                                                fi
+                                                ct=`expr ${ct} - 1`
+                                        done
+                                        if [ ${flag} -eq 1 ]
+                                        then
+                                                flights_180_[$mk15]=${flight}
+                                                mk15=`expr ${mk15} + 1`
+                                        fi;;
+                                16) ct=`expr ${mk16} - 1`
+                                        flag=1
+                                        while test ${ct} -ne -1
+                                        do
+                                                if [ ${flight} -eq flights_192_[$ct] ]
+                                                then
+                                                        flag=10
+                                                fi
+                                                ct=`expr ${ct} - 1`
+                                        done
+                                        if [ ${flag} -eq 1 ]
+                                        then
+                                                flights_192_[$mk16]=${flight}
+                                                mk16=`expr ${mk16} + 1`
+                                        fi;;
+                                17) ct=`expr ${mk17} - 1`
+                                        flag=1
+                                        while test ${ct} -ne -1
+                                        do
+                                                if [ ${flight} -eq flights_204_[$ct] ]
+                                                then
+                                                        flag=10
+                                                fi
+                                                ct=`expr ${ct} - 1`
+                                        done
+                                        if [ ${flag} -eq 1 ]
+                                        then
+                                                flights_204_[$mk17]=${flight}
+                                                mk17=`expr ${mk17} + 1`
+                                        fi;;
+                                18) ct=`expr ${mk18} - 1`
+                                        flag=1
+                                        while test ${ct} -ne -1
+                                        do
+                                                if [ ${flight} -eq flights_216_[$ct] ]
+                                                then
+                                                        flag=10
+                                                fi
+                                                ct=`expr ${ct} - 1`
+                                        done
+                                        if [ ${flag} -eq 1 ]
+                                        then
+                                                flights_216_[$mk18]=${flight}
+                                                mk18=`expr ${mk18} + 1`
+                                        fi;;
+                                19) ct=`expr ${mk19} - 1`
+                                        flag=1
+                                        while test ${ct} -ne -1
+                                        do
+                                                if [ ${flight} -eq flights_228_[$ct] ]
+                                                then
+                                                        flag=10
+                                                fi
+                                                ct=`expr ${ct} - 1`
+                                        done
+                                        if [ ${flag} -eq 1 ]
+                                        then
+                                                flights_228_[$mk19]=${flight}
+                                                mk19=`expr ${mk19} + 1`
+                                        fi;;
+                                20) ct=`expr ${mk20} - 1`
+                                        flag=1
+                                        while test ${ct} -ne -1
+                                        do
+                                                if [ ${flight} -eq flights_240_[$ct] ]
+                                                then
+                                                        flag=10
+                                                fi
+                                                ct=`expr ${ct} - 1`
+                                        done
+                                        if [ ${flag} -eq 1 ]
+                                        then
+                                                flights_240_[$mk20]=${flight}
+                                                mk20=`expr ${mk20} + 1`
+                                        fi;;
+
 			esac
 		done
 
@@ -1086,6 +1257,16 @@ then
 	echo "export mk8=$mk8"  >> $COMOUT/ltinfo.env
 	echo "export mk9=$mk9"  >> $COMOUT/ltinfo.env
 	echo "export mk10=$mk10"  >> $COMOUT/ltinfo.env
+        echo "export mk11=$mk11"  >> $COMOUT/ltinfo.env
+        echo "export mk12=$mk12"  >> $COMOUT/ltinfo.env
+        echo "export mk13=$mk13"  >> $COMOUT/ltinfo.env
+        echo "export mk14=$mk14"  >> $COMOUT/ltinfo.env
+        echo "export mk15=$mk15"  >> $COMOUT/ltinfo.env
+        echo "export mk16=$mk16"  >> $COMOUT/ltinfo.env
+        echo "export mk17=$mk17"  >> $COMOUT/ltinfo.env
+        echo "export mk18=$mk18"  >> $COMOUT/ltinfo.env
+        echo "export mk19=$mk19"  >> $COMOUT/ltinfo.env
+        echo "export mk20=$mk20"  >> $COMOUT/ltinfo.env
 fi
 
 mk[2]=`expr ${mk2} - 1`
@@ -1097,12 +1278,22 @@ mk[7]=`expr ${mk7} - 1`
 mk[8]=`expr ${mk8} - 1`
 mk[9]=`expr ${mk9} - 1`
 mk[10]=`expr ${mk10} - 1`
+mk[11]=`expr ${mk11} - 1`
+mk[12]=`expr ${mk12} - 1`
+mk[13]=`expr ${mk13} - 1`
+mk[14]=`expr ${mk14} - 1`
+mk[15]=`expr ${mk15} - 1`
+mk[16]=`expr ${mk16} - 1`
+mk[17]=`expr ${mk17} - 1`
+mk[18]=`expr ${mk18} - 1`
+mk[19]=`expr ${mk19} - 1`
+mk[20]=`expr ${mk20} - 1`
 j=`expr ${minlt1} / 12`
 finish=`expr ${maxlt1} / 12`
 
-if [ ${maxlt1} -gt 120 ]
+if [ ${maxlt1} -gt 240 ]
 then
-	finish=`expr 120 / 12`
+	finish=`expr 240 / 12`
 fi
 
 while test ${j} -le ${finish}
@@ -1207,6 +1398,56 @@ do
 				cp wsr_track.${flights_120_[$k]} fort.7
 				ifl=${flights_120_[$k]}
 			fi
+                        if [ ${lt1} -eq 132 ]
+                        then
+                                cp wsr_track.${flights_132_[$k]} fort.7
+                                ifl=${flights_132_[$k]}
+                        fi
+                        if [ ${lt1} -eq 144 ]
+                        then
+                                cp wsr_track.${flights_144_[$k]} fort.7
+                                ifl=${flights_144_[$k]}
+                        fi
+                        if [ ${lt1} -eq 156 ]
+                        then
+                                cp wsr_track.${flights_156_[$k]} fort.7
+                                ifl=${flights_156_[$k]}
+                        fi
+                        if [ ${lt1} -eq 168 ]
+                        then
+                                cp wsr_track.${flights_168_[$k]} fort.7
+                                ifl=${flights_168_[$k]}
+                        fi
+                        if [ ${lt1} -eq 180 ]
+                        then
+                                cp wsr_track.${flights_180_[$k]} fort.7
+                                ifl=${flights_180_[$k]}
+                        fi
+                        if [ ${lt1} -eq 192 ]
+                        then
+                                cp wsr_track.${flights_192_[$k]} fort.7
+                                ifl=${flights_192_[$k]}
+                        fi
+                        if [ ${lt1} -eq 204 ]
+                        then
+                                cp wsr_track.${flights_204_[$k]} fort.7
+                                ifl=${flights_204_[$k]}
+                        fi
+                        if [ ${lt1} -eq 216 ]
+                        then
+                                cp wsr_track.${flights_216_[$k]} fort.7
+                                ifl=${flights_216_[$k]}
+                        fi
+                        if [ ${lt1} -eq 228 ]
+                        then
+                                cp wsr_track.${flights_228_[$k]} fort.7
+                                ifl=${flights_228_[$k]}
+                        fi
+                        if [ ${lt1} -eq 240 ]
+                        then
+                                cp wsr_track.${flights_240_[$k]} fort.7
+                                ifl=${flights_240_[$k]}
+                        fi
 
 			#SMS#   startmsg
 			$EXECwsr/wsr_sigvar_allnorms < params >> $pgmout 2> errfile
@@ -1272,6 +1513,46 @@ do
 			then
 				ifl=${flights_120_[$k]}
 			fi
+                        if [ ${lt1} -eq 132 ]
+                        then
+                                ifl=${flights_132_[$k]}
+                        fi
+                        if [ ${lt1} -eq 144 ]
+                        then
+                                ifl=${flights_144_[$k]}
+                        fi
+                        if [ ${lt1} -eq 156 ]
+                        then
+                                ifl=${flights_156_[$k]}
+                        fi
+                        if [ ${lt1} -eq 168 ]
+                        then
+                                ifl=${flights_168_[$k]}
+                        fi
+                        if [ ${lt1} -eq 180 ]
+                        then
+                                ifl=${flights_180_[$k]}
+                        fi
+                        if [ ${lt1} -eq 192 ]
+                        then
+                                ifl=${flights_192_[$k]}
+                        fi
+                        if [ ${lt1} -eq 204 ]
+                        then
+                                ifl=${flights_204_[$k]}
+                        fi
+                        if [ ${lt1} -eq 216 ]
+                        then
+                                ifl=${flights_216_[$k]}
+                        fi
+                        if [ ${lt1} -eq 228 ]
+                        then
+                                ifl=${flights_228_[$k]}
+                        fi
+                        if [ ${lt1} -eq 240 ]
+                        then
+                                ifl=${flights_240_[$k]}
+                        fi
 
 			read tmpdrop < wsr_track.${ifl}
 			echo $tmpdrop > dropplot.d
