@@ -521,6 +521,16 @@ else
 	mk[8]=`expr ${mk8} - 1`
 	mk[9]=`expr ${mk9} - 1`
 	mk[10]=`expr ${mk10} - 1`
+        mk[11]=`expr ${mk11} - 1`
+        mk[12]=`expr ${mk12} - 1`
+        mk[13]=`expr ${mk13} - 1`
+        mk[14]=`expr ${mk14} - 1`
+        mk[15]=`expr ${mk15} - 1`
+        mk[16]=`expr ${mk16} - 1`
+        mk[17]=`expr ${mk17} - 1`
+        mk[18]=`expr ${mk18} - 1`
+        mk[19]=`expr ${mk19} - 1`
+        mk[20]=`expr ${mk20} - 1`
 
 	z=1
 	while test ${z} -le ${cases}
