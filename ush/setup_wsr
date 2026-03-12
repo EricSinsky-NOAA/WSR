@@ -501,10 +501,9 @@ do
 				mk3=0
 			fi
 
-			#latestobstime=`/nwprod/util/exec/ndate +204 ${PDY}00`
-			latestobstime=`$NDATE +204 ${PDY}00`
+			latestobstime=`$NDATE +240 ${PDY}00`
 			if [ ${obsdate} -gt ${latestobstime} ]; then
-				echo "Observation time must be within 204 hours of ${PDY}00"
+				echo "Observation time must be within 240 hours of ${PDY}00"
 				mk3=0
 			fi
 
@@ -542,9 +541,9 @@ do
 					mk4=0
 				fi
 
-				latestveritime=`$NDATE +204 ${PDY}00`
+				latestveritime=`$NDATE +240 ${PDY}00`
 				if [ ${veridate} -gt ${latestveritime} ]; then
-					echo "Verification time must be within 204 hours of ${PDY}00"
+					echo "Verification time must be within 240 hours of ${PDY}00"
 					mk4=0
 				fi
 
@@ -679,10 +678,9 @@ do
 							mk3=0
 						fi
 
-						#latestobstime=`/nwprod/util/exec/ndate +204 ${PDY}00`
-						latestobstime=`$NDATE +204 ${PDY}00`
+						latestobstime=`$NDATE +240 ${PDY}00`
 						if [ ${obsdate} -gt ${latestobstime} ]; then
-							echo "Observation time must be within 204 hours of ${PDY}00"
+							echo "Observation time must be within 240 hours of ${PDY}00"
 							mk3=0
 						fi
 
@@ -721,9 +719,9 @@ do
 							mk4=0
 						fi
 
-						latestveritime=`$NDATE +204 ${PDY}00`
+						latestveritime=`$NDATE +240 ${PDY}00`
 						if [ ${veridate} -gt ${latestveritime} ]; then
-							echo "Verification time must be within 204 hours of ${PDY}00"
+							echo "Verification time must be within 240 hours of ${PDY}00"
 							mk4=0
 						fi
 
@@ -834,8 +832,7 @@ done
 #curdd=`date -u +%d`
 #curhh=`date -u +%H`
 #PDY=${curyy}${curmm}${curdd}
-#latestobstime=`/nwprod/util/exec/ndate +204 ${PDY}00`
-latestobstime=`$NDATE +204 ${PDY}00`
+latestobstime=`$NDATE +240 ${PDY}00`
 
 i=1
 CURCASES=0
